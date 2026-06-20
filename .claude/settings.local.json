@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep -l -i \"GetByDateRange\\\\|ProcessTransaction\\\\|CreateAsync\\\\|UpdateAsync\")",
+      "PowerShell(docker version --format '{{.Server.Version}}' 2>&1)",
+      "PowerShell(docker compose version 2>&1)",
+      "PowerShell(docker compose down 2>&1)",
+      "PowerShell(docker network rm caixa-network 2>&1)",
+      "PowerShell(docker compose up -d 2>&1)",
+      "PowerShell(docker compose ps -a --format \"{{.Name}}: {{.Status}}\")",
+      "Bash(Remove-Item \"d:/Project/PROJECT_CHECKLIST.md\" -Force)",
+      "Bash(Remove-Item \"d:/Project/PROJECT_SUMMARY.md\" -Force)",
+      "Bash(Write-Host \"Deletados com sucesso\")"
+    ]
+  }
+}
